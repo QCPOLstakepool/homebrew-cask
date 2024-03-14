@@ -14,7 +14,9 @@ cask "minotaur-wallet" do
 
   # Renamed for consistency: the real name is Minotaur Wallet
   app "minotaur.app", target: "Minotaur Wallet.app"
-  
+
+  uninstall quit: "io.github.minotaurergo.minotaur"
+
   zap trash: [
     "~/Databases/minotaur",
     "~/Library/Application Support/minotaur",
